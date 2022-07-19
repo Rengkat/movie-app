@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav {
+    @apply bg-[#292929] h-[140px] pt-[40px] flex justify-center lg:justify-start;
+  }
+  .banner {
+    @apply font-bold text-white text-4xl lg:text-7xl lg:w-[40%] leading-[50px] md:leading-[90px] text-center lg:text-left;
+  }
+}
+.hero {
+  height: 550px;
+  background-image: url("./components/Rectangle\ 5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .banner { */
+/* color: #ffffff;
+  margin-left: 77px;
+  padding-top: 100px;
+  height: 282px;
+  width: 490px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 94px; */
+/* letter-spacing: -0.05em; */
+/* } */
+/* lg:w-[20%] md:w-[30%] lg:ml-20 text-white text-center md:text-start lg:text-7xl text-4xl font-bold pt-[100px] leading-[50px] md:leading-[90px] */
