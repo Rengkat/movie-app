@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+const KEY = process.env.REACT_APP_KEY_OMDBA;
 const SearchedMovies = () => {
   //   state
   const [movies, setMovies] = useState([]);
@@ -12,7 +13,7 @@ const SearchedMovies = () => {
     setLoading(true);
     try {
       const data = await fetch(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=3fda3c3&s=${search}`
+        `http://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=${search}`
       );
       const response = await data.json();
       if (response.Search) {
